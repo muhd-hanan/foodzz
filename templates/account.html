@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Account Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100">
+    
+   
+    <header class="h-[80px] w-full shadow-md mb-10 bg-white">
+        <section class="wrapper h-full flex items-center px-4">
+            <a href="" class="flex items-center">
+                <img class="w-6" src="./images/arrow.png" alt="Back">
+            </a>
+            <h2 class="text-center flex-1 font-bold text-[22px] text-gray-700">Account</h2>
+        </section>
+    </header>
+
+    <section class="wrapper px-4">
+        <div class="flex flex-col md:flex-row gap-10">
+            
+        
+            <div class="w-full md:w-[380px]">
+                <div class="m-3 p-4 border-2 rounded-lg border-gray-300 shadow-sm flex items-center gap-4 bg-white">
+                    <img src="./images/man.png" class="w-20" alt="">
+                    <div>
+                        <h3 class="text-[16px] font-semibold">Adil</h3>
+                        <p class="text-[14px] font-semibold">6524664</p>
+                        <p class="text-[14px] font-semibold">adil@gmail.com</p>
+                    </div>
+                </div>
+                
+                
+                <div class="mt-5 flex flex-col gap-4">
+                    <a class="flex items-center bg-[#26C485] text-white text-[14px] py-3 px-4 rounded-lg shadow-md hover:bg-[#289460]" href="">
+                        <img class="w-5 mr-3" src="./images/address.png" alt=""> 
+                        <span class="font-semibold">Manage Address</span>
+                    </a>
+                    <a class="flex items-center bg-[#26C485] text-white text-[14px] py-3 px-4 rounded-lg shadow-md hover:bg-[#289460]" href="">
+                        <img class="w-5 mr-3" src="./images/cart.png" alt=""> 
+                        <span class="font-semibold">Orders</span>
+                    </a>
+                    <a class="flex items-center bg-[#26C485] text-white text-[14px] py-3 px-4 rounded-lg shadow-md hover:bg-[#289460]" href="">
+                        <img class="w-5 mr-3" src="./images/logout.png" alt=""> 
+                        <span class="font-semibold">Logout</span>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="flex-1">
+                <h3 class="font-bold text-[20px] text-[#363333] mb-4">Recent Orders</h3>
+                <div class="w-full max-w-md border-2 border-gray-300 rounded-lg p-4 shadow-sm bg-white">
+                    
+                   
+                    <div class="flex items-center gap-3 pb-3 border-b-2 border-gray-300">
+                        <img src="./images/rest1.png" alt="" class="w-16 rounded-md">
+                        <div>
+                            <h4 class="font-semibold">Alfam Full</h4>
+                            <p class="text-[14px] font-semibold">$30 | <span>2 items</span></p>
+                        </div>
+                        <a href="" class="ml-auto text-gray-500 underline text-[12px] font-semibold">#162</a>
+                    </div>
+
+                    
+                    <div class="flex justify-between items-center mt-3">
+                        <a class="bg-[#26C485] hover:bg-[#289460] text-white px-3 py-2 rounded-lg font-semibold text-[14px]" href="">Track Order</a>
+                        <p class="text-red-600 font-bold">Preparing</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>
