@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Address</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100">
+
+    
+    <header class="h-[80px] w-full shadow-md mb-10 bg-white">
+        <section class="h-full flex justify-start items-center px-4 mx-auto">
+            <a href="#" class="flex items-center">
+                <img class="w-6" src="./images/arrow.png" alt="Back">
+            </a>
+            <h2 class="text-center flex-1 font-bold text-[22px]">Add Address</h2>
+        </section>
+    </header>
+
+   
+    <div class="max-w-md w-full mx-auto px-4 sm:px-6 md:px-0">
+        <div class="w-full h-[27vh] rounded-lg bg-gray-300 mb-4"></div>
+
+        <form action="">
+            <label for="Address" class="font-semibold text-[15px] text-gray-800">Address</label>
+            <input type="text" id="Address" class="w-full mb-3 rounded-md border-gray-400 h-[6vh] px-3 border-2">
+
+            <label for="Apartment" class="font-semibold text-[15px] text-gray-800">Apartment</label>
+            <input type="text" id="Apartment" class="w-full mb-3 rounded-md border-gray-400 h-[6vh] px-3 border-2">
+
+            <label for="Land Mark" class="font-semibold text-[15px] text-gray-800">Land Mark</label>
+            <input type="text" id="Land Mark" class="w-full mb-3 rounded-md border-gray-400 h-[6vh] px-3 border-2">
+
+            <h2 class="font-semibold text-[15px] text-gray-800 mb-2">Label Us</h2>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <label for="home" class="flex-1">
+                    <input type="radio" id="home" name="label" class="hidden peer">
+                    <span class="block text-center text-gray-800 font-semibold px-4 py-2 rounded peer-checked:bg-red-500 peer-checked:text-white cursor-pointer">HOME</span>
+                </label>
+                <label for="work" class="flex-1">
+                    <input type="radio" id="work" name="label" class="hidden peer">
+                    <span class="block text-center text-gray-800 font-semibold px-4 py-2 rounded peer-checked:bg-red-500 peer-checked:text-white cursor-pointer">WORK</span>
+                </label>
+                <label for="other" class="flex-1">
+                    <input type="radio" id="other" name="label" class="hidden peer">
+                    <span class="block text-center text-gray-800 font-semibold px-4 py-2 rounded peer-checked:bg-red-500 peer-checked:text-white cursor-pointer">OTHER</span>
+                </label>
+            </div>
+
+            <button class="w-full rounded-md bg-red-500 font-semibold text-white h-[6vh] px-3 border-2">SAVE ADDRESS</button>
+        </form>
+    </div>
+
+</body>
+</html>
