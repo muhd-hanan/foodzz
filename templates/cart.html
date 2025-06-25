@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-100">
+
+
+    <header class="h-20 w-full shadow-md bg-white">
+  <section class="h-full flex items-center px-4">
+    <a href="#" class="flex items-center">
+      <img class="w-6" src="./images/arrow.png" alt="Back">
+    </a>
+    <h2 class="text-center flex-1 font-bold text-xl">Cart</h2>
+  </section>
+</header>
+
+<section class=" pb-14">
+    <div>
+        <div class="w-full  bg-gray-100 p-4 flex justify-center items-start">
+    
+        <div class="w-full  sm:max-w-xl bg-white shadow-md rounded-lg overflow-hidden flex flex-col sm:flex-row gap-4 p-4">
+      
+      
+            <div class="flex justify-center sm:justify-start sm:w-1/5">
+              <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+            </div>
+
+    
+            <div class="flex flex-col justify-center sm:w-2/3">
+                <h3 class="font-semibold text-gray-800 text-lg">Manama Restaurant</h3>
+                <p class="text-sm text-gray-500">Tasty and Healthy food</p>
+
+                <div class="flex gap-6 mt-3">
+                    <div class="flex items-center gap-1">
+                    <img src="./images/star.png" alt="rating" class="w-5 h-5">
+                    <p class="font-semibold text-sm">4.2</p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <img src="./images/clock.png" alt="time" class="w-5 h-5">
+                    <p class="font-semibold text-sm">30 mins</p>
+                </div>
+            </div>
+        </div>
+
+         </div>
+    </div>
+
+<!-- -------------------------------------------------------------- -->
+
+    <div class="w-full sm:max-w-xl mx-auto bg-white shadow-lg mt-3 pb-3 rounded-lg pt-2">
+            <h2 class="text-gray-700 font-semibold text-sm m-2 p-2 border-b border-gray-300">
+              ITEMS IN CART
+            </h2>
+
+            <div class="p-2 border-b border-gray-300 mx-2 flex justify-between items-center flex-wrap gap-2">
+              <div>
+                <h4 class="text-sm font-medium">Peri Peri Alfam</h4>
+                <h3 class="font-bold text-xs text-gray-700">$140</h3>
+              </div>
+
+              <div>
+                <div class="flex items-center rounded-full overflow-hidden shadow-sm">
+                  <button id="decrement" class="bg-green-500 text-white px-3 py-1 text-sm hover:bg-green-600">-</button>
+                  <input id="count" type="number" value="0"
+                         class="w-12 text-center text-sm font-semibold bg-white outline-none px-2 py-1 border-t border-b border-gray-200" />
+                  <button id="increment" class="bg-green-500 text-white px-3 py-1 text-sm hover:bg-green-600">+</button>
+                </div>
+              </div>
+            </div>
+    </div>
+
+ 
+
+    <div class="w-full sm:max-w-xl mx-auto bg-white shadow-lg pb-3 rounded-lg pt-2 mt-5">
+            <div class="p-2 border-b border-gray-300 mx-2 flex justify-between">
+                <h5 class="text-gray-500">coupen code</h5>
+                <a href="#" class=" px-6 py-1 bg-green-600 text-white rounded-md text-[12px]">APPLY</a>
+            </div>
+            <div class="flex gap-1">
+                <img src="./images/discount.png" class="w-5 h-5 mt-1  mx-2" alt="img">
+                <h6 class="text-red-700 text-[10px] font-bold mt-2 ">View All offers</h6>
+            </div>
+
+    </div>
+
+<!-- -------------------------------------------------------------- -->
+
+ <div class="w-full sm:max-w-xl mx-auto bg-white shadow-lg pb-3 rounded-lg pt-2 mt-5">
+     <h2 class="text-gray-700 font-semibold text-sm m-2 p-2 ">Bill Details</h2>
+
+     <div class="p-2 border-b border-gray-300 mx-2 flex justify-between">
+        <p>item Toatal</p>
+        <p>$30</p>
+     </div>
+
+      <div class="p-2 border-b border-gray-300 mx-2 flex justify-between">
+        <p>offer applied</p>
+        <p>$30</p>
+     </div>
+
+      <div class="p-2 border-b border-gray-300 mx-2 flex justify-between">
+        <p>Delevery charge</p>
+        <p>$30</p>
+     </div>
+
+      <div class="p-2 border-b border-gray-300 mx-2 flex justify-between">
+        <p class="font-bold">To Pay</p>
+        <p class="font-bold">$30</p>
+     </div>
+     
+           
+
+    </div>
+    <!-- ----------------------------- -->
+
+    <div class="w-full sm:max-w-xl mx-auto bg-white shadow-lg pb-3 rounded-lg pt-2 mt-5">
+            <div class="p-2 border-b border-gray-300 mx-2 flex justify-between">
+                <h5 class="text-gray-800">delevery to </h5>
+                
+            </div>
+            <div class="flex gap-1 justify-between pt-3 mx-2">
+               <p class="text-sm">address</p>
+                <a href="#" class=" px-6 py-1 bg-green-600 text-white rounded-md text-[12px]">Change</a>
+               
+            </div>
+
+    </div>
+
+    <div class="w-full sm:max-w-xl mx-auto  pt-2 mt-5">
+           <button class="w-full py-3 bg-red-700 rounded-md text-white">Continue</button>
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+    <script>
+        const decrement = document.getElementById("decrement");
+const increment = document.getElementById("increment");
+const countInput = document.getElementById("count");
+
+decrement.addEventListener("click", () => {
+  countInput.value = parseInt(countInput.value) - 1;
+});
+
+increment.addEventListener("click", () => {
+  countInput.value = parseInt(countInput.value) + 1;
+});
+
+    </script>
+</body>
+</html>
