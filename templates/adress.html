@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Address</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body class="bg-gray-100">
   <header class="h-[80px] w-full shadow-md bg-white">
     <section class="h-full flex items-center px-4">
       <a href="#" class="flex items-center">
-        <img class="w-6" src="./images/arrow.png" alt="Back">
+        <img class="w-6" src="{% static './images/arrow.png' %}" alt="Back">
       </a>
       <h2 class="text-center flex-1 font-bold text-[22px]">Address</h2>
     </section>
@@ -22,7 +23,7 @@
       <a href="#" class="bg-red-600 w-full text-center text-white block py-3 rounded-lg font-semibold">Add New Address</a>
 
       <div class="bg-slate-300 rounded-md flex flex-col sm:flex-row items-start sm:items-center p-4 gap-4">
-        <img src="./images/house.png" alt="House" class="w-14 h-14 bg-white p-3 rounded-full">
+        <img src="{% static './images/house.png' %}" alt="House" class="w-14 h-14 bg-white p-3 rounded-full">
 
         <div class="flex-1">
           <h3 class="text-[15px] font-semibold">HOME</h3>

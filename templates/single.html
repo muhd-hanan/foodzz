@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single-rest</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body class=" bg-gray-100 pb-5">
 
     <header class="h-[80px] shadow-md bg-white">
         <section class="wrapper h-full flex justify-between items-center">
             <div>
-                <h1><a href="index.html"><img src="images/logo.png" alt="logo" class="w-[90px]"></a></h1>
+                <h1><a href="index.html"><img src="{% static 'images/logo.png' %}" alt="logo" class="w-[90px]"></a></h1>
             </div>
             <div class=" hidden md:block">
                 <ul class="flex justify-center">
-                    <li class="mr-7 "><a class="flex justify-start items-center text-[20px]" href="index.html"><img src="images/home.png" alt="image" class="w-[18px] mr-2">Home</a></li>
-                    <li class="mr-7 "><a class="flex justify-start items-center text-[20px]" href="#"><img src="images/search.png" alt="image" class="w-[18px] mr-2">Search</a></li>
-                    <li class="mr-7 "><a class="flex justify-start items-center text-[20px]" href="#"><img src="images/bag.png" alt="image" class="w-[18px] mr-2">Cart</a></li>
-                    <li><a class="flex justify-start items-center text-[20px]" href="#"><img src="images/user.png" alt="image" class="w-[18px] mr-2">Account</a></li>
+                    <li class="mr-7 "><a class="flex justify-start items-center text-[20px]" href="index.html"><img src="{% static 'images/home.png' %}" alt="image" class="w-[18px] mr-2">Home</a></li>
+                    <li class="mr-7 "><a class="flex justify-start items-center text-[20px]" href="#"><img src="{% static 'images/search.png' %}" alt="image" class="w-[18px] mr-2">Search</a></li>
+                    <li class="mr-7 "><a class="flex justify-start items-center text-[20px]" href="#"><img src="{% static 'images/bag.png' %}" alt="image" class="w-[18px] mr-2">Cart</a></li>
+                    <li><a class="flex justify-start items-center text-[20px]" href="#"><img src="{% static 'images/user.png" alt="image' %}" class="w-[18px] mr-2">Account</a></li>
                 </ul>
             </div>
             <div class=" flex justify-end items-center">
-                <img src="images/map.png" alt="map" class="w-[18px] mr-3">
+                <img src="{% static 'images/map.png' %}" alt="map" class="w-[18px] mr-3">
                 <p class=" text-16px] font-semibold pb-1 border-b-2 border-yellow-400">Tirur, Malappuram</p>
             </div>
         </section>
@@ -39,7 +39,7 @@
       
       
             <div class="flex justify-center sm:justify-start sm:w-1/5">
-              <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+              <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
             </div>
 
     
@@ -49,17 +49,17 @@
 
                 <div class="flex gap-6 mt-3">
                     <div class="flex items-center gap-1">
-                    <img src="./images/star.png" alt="rating" class="w-5 h-5">
+                    <img src="{% static './images/star.png' %}" alt="rating" class="w-5 h-5">
                     <p class="font-semibold text-sm">4.2</p>
                 </div>
                 <div class="flex items-center gap-1">
-                    <img src="./images/clock.png" alt="time" class="w-5 h-5">
+                    <img src="{% static './images/clock.png' %}" alt="time" class="w-5 h-5">
                     <p class="font-semibold text-sm">30 mins</p>
                 </div>
                 
             </div>
             <span class="flex justify-start items-center text-red-600 font-semibold mt-2">
-                <img src="images/discount.png" alt="image" class="w-[16px] mr-2">
+                <img src="{% static 'images/discount.png' %}" alt="image" class="w-[16px] mr-2">
                 free delevery
             </span>
         </div> 
@@ -76,14 +76,14 @@
             <h2>Alfam</h2>
             <div class="w-full   bg-white shadow-md rounded-lg flex justify-between p-4">
                 <div>
-                    <img src="./images/non.png" class="w-3" alt="">
+                    <img src="{% static './images/non.png' %}" class="w-3" alt="">
                     <h4>pepper alfam</h4>
                     <span>$180</span><br>
                     <button class="py-1  px-3 rounded-lg text-white bg-green-700">add</button>
 
                 </div>
                 <div class="flex justify-center sm:justify-start sm:w-1/5">
-                    <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+                    <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
                 </div>
 
                 
@@ -91,14 +91,14 @@
 
             <div class="w-full   bg-white shadow-md rounded-lg flex justify-between p-4">
                 <div>
-                    <img src="./images/non.png" class="w-3" alt="">
+                    <img src="{% static './images/non.png' %}" class="w-3" alt="">
                     <h4>pepper alfam</h4>
                     <span>$180</span><br>
                     <button class="py-1  px-3 rounded-lg text-white bg-green-700">add</button>
 
                 </div>
                 <div class="flex justify-center sm:justify-start sm:w-1/5">
-                    <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+                    <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
                 </div>
 
                 
@@ -106,14 +106,14 @@
 
             <div class="w-full   bg-white shadow-md rounded-lg flex justify-between p-4">
                 <div>
-                    <img src="./images/non.png" class="w-3" alt="">
+                    <img src="{% static './images/non.png' %}" class="w-3" alt="">
                     <h4>pepper alfam</h4>
                     <span>$180</span><br>
                     <button class="py-1  px-3 rounded-lg text-white bg-green-700">add</button>
 
                 </div>
                 <div class="flex justify-center sm:justify-start sm:w-1/5">
-                    <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+                    <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
                 </div>
 
                 
@@ -132,14 +132,14 @@
             <h2>Biriyani</h2>
             <div class="w-full   bg-white shadow-md rounded-lg flex justify-between p-4">
                 <div>
-                    <img src="./images/non.png" class="w-3" alt="">
+                    <img src="{% static './images/non.png' %}" class="w-3" alt="">
                     <h4>chiken Biriyani</h4>
                     <span>$180</span><br>
                     <button class="py-1  px-3 rounded-lg text-white bg-green-700">add</button>
 
                 </div>
                 <div class="flex justify-center sm:justify-start sm:w-1/5">
-                    <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+                    <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
                 </div>
 
                 
@@ -147,14 +147,14 @@
 
             <div class="w-full   bg-white shadow-md rounded-lg flex justify-between p-4">
                 <div>
-                    <img src="./images/non.png" class="w-3" alt="">
+                    <img src="{% static './images/non.png' %}" class="w-3" alt="">
                     <h4>chiken Biriyani</h4>
                     <span>$180</span><br>
                     <button class="py-1  px-3 rounded-lg text-white bg-green-700">add</button>
 
                 </div>
                 <div class="flex justify-center sm:justify-start sm:w-1/5">
-                    <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+                    <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
                 </div>
 
                 
@@ -162,14 +162,14 @@
 
             <div class="w-full   bg-white shadow-md rounded-lg flex justify-between p-4">
                 <div>
-                    <img src="./images/non.png" class="w-3" alt="">
+                    <img src="{% static './images/non.png' %}" class="w-3" alt="">
                     <h4>chiken Biriyani</h4>
                     <span>$180</span><br>
                     <button class="py-1  px-3 rounded-lg text-white bg-green-700">add</button>
 
                 </div>
                 <div class="flex justify-center sm:justify-start sm:w-1/5">
-                    <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+                    <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
                 </div>
 
                 

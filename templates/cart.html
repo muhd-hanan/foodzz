@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
      <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="{% static 'css/style.css'%}">
     
 </head>
 <body class="bg-gray-100">
@@ -13,7 +15,7 @@
     <header class="h-20 w-full shadow-md bg-white">
   <section class="h-full flex items-center px-4">
     <a href="#" class="flex items-center">
-      <img class="w-6" src="./images/arrow.png" alt="Back">
+      <img class="w-6" src="{% static './images/arrow.png' %}" alt="Back">
     </a>
     <h2 class="text-center flex-1 font-bold text-xl">Cart</h2>
   </section>
@@ -27,7 +29,7 @@
       
       
             <div class="flex justify-center sm:justify-start sm:w-1/5">
-              <img src="./images/rest1.png" alt="img" class="w-32 sm:w-28 rounded-md">
+              <img src="{% static './images/rest1.png' %}" alt="img" class="w-32 sm:w-28 rounded-md">
             </div>
 
     
@@ -37,11 +39,11 @@
 
                 <div class="flex gap-6 mt-3">
                     <div class="flex items-center gap-1">
-                    <img src="./images/star.png" alt="rating" class="w-5 h-5">
+                    <img src="{% static './images/star.png' %}" alt="rating" class="w-5 h-5">
                     <p class="font-semibold text-sm">4.2</p>
                 </div>
                 <div class="flex items-center gap-1">
-                    <img src="./images/clock.png" alt="time" class="w-5 h-5">
+                    <img src="{% static './images/clock.png' %}" alt="time" class="w-5 h-5">
                     <p class="font-semibold text-sm">30 mins</p>
                 </div>
             </div>
@@ -82,7 +84,7 @@
                 <a href="#" class=" px-6 py-1 bg-green-600 text-white rounded-md text-[12px]">APPLY</a>
             </div>
             <div class="flex gap-1">
-                <img src="./images/discount.png" class="w-5 h-5 mt-1  mx-2" alt="img">
+                <img src="{% static './images/discount.png' %}" class="w-5 h-5 mt-1  mx-2" alt="img">
                 <h6 class="text-red-700 text-[10px] font-bold mt-2 ">View All offers</h6>
             </div>
 
